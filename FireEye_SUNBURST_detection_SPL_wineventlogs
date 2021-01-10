@@ -1,0 +1,6 @@
+index=windows sourcetype="WinEventLog" EventCode=4688 Creator_Process_Name="*\\solarwinds.businesslayerhost.exe" NOT
+(New_Process_Name in ("*\\SolarWinds\\Orion\\ExportToPDFCmd.Exe","*\\SolarWinds.Credentials\\SolarWinds.Credentials.Orion.WebApi.exe","*\\SolarWinds\Orion\\Topology\\SolarWinds.Orion.Topology.Calculator.exe","*\\SolarWinds\\Orion\\Database-Maint.exe","*\\SolarWinds.Orion.ApiPoller.Service\\SolarWinds.Orion.ApiPoller.Service.exe","*\\Windows\\SysWOW64\\WerFault.exe"))
+
+
+###  This is a Splunk query translated from Sysmon (Olafhartong) to Wineventlog.
+###  https://gist.github.com/olafhartong/213bcf76f31d2fc36ff189aa7b0cc656
